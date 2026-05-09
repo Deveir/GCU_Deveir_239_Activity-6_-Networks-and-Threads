@@ -7,8 +7,8 @@ public class TestMyThreads {
         MyThread1 thread1 = new MyThread1();
         thread1.start();
 
-        Runnable thread2Runnable = new MyThread2();
-        Thread thread2 = new Thread(thread2Runnable);
+        Runnable runnableThread = new MyThread2();
+        Thread thread2 = new Thread(runnableThread);
         thread2.start();
     }
 }
