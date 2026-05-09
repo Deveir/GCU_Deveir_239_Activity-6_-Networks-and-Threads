@@ -1,4 +1,4 @@
-package app;
+ package app;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -74,22 +74,5 @@ public class Server {
         }
 
         System.out.println("Server closed.");
-    }
-
-    /**
-     * Main method for running the server.
-     *
-     * @param args command line arguments
-     */
-    public static void main(String[] args) {
-
-        Server server = new Server();
-
-        try {
-            server.start(9999);
-            server.cleanup();
-        } catch (IOException e) {
-            System.out.println("Server error: " + e.getMessage());
-        }
     }
 }
